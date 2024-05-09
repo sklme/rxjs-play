@@ -3,7 +3,6 @@
  */
 
 import {
-  Observable,
   filter,
   first,
   interval,
@@ -19,12 +18,7 @@ import {
   takeWhile,
   timer,
 } from "rxjs";
-import {
-  debounceTime,
-  distinct,
-  distinctUntilChanged,
-  single,
-} from "rxjs/operators";
+import { distinct, distinctUntilChanged } from "rxjs/operators";
 
 const source$ = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
